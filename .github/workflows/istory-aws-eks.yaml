@@ -101,7 +101,6 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/istory:${{ env.DOCKER_TAG }}
 
-      # 서비스 리포지토리 체크아웃
       - name: 10.서비스 리포지토리 체크아웃
         uses: actions/checkout@v4
         with:
